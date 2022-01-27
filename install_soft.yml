@@ -1,6 +1,0 @@
-- hosts: windows
-  tasks:
-          - name: Install notepad
-            win_chocolatey:
-                    name: googlechrome
-                    state: present
