@@ -6,8 +6,8 @@
       src: /home/ros/script.ps1
       dest: C:\Users\Ros\
 
-  - name: Run Script
-    win_shell: .\script.ps1
+  #- name: Run Script
+    #win_shell: .\script.ps1
 
   - name: Remove script
     win_file: 
