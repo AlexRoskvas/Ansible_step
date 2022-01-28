@@ -1,0 +1,18 @@
+---
+- hosts: windows
+  tasks:
+  - name: Copy script from ubuntu
+    win_copy:
+      src: /home/ros/script.ps1
+      dest: C:\Users\Ros\
+
+  - name: Run Script
+    win_shell: .\script.ps1
+
+  - name: Remove script
+    win_file: 
+      path: C:\Users\Ros\script.ps1
+      state: absent  
+      
+      
+
